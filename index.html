@@ -1,15 +1,97 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Librería Pan y Café</title>
     <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <p>hola</p>
-    <p>mis</p>
-    <p>amores</p>
-    <p>a trabajar</p>
+
+    <!-- Barra de Navegación -->
+    <header class="navbar">
+        <div class="logo">
+            <img src="assets/img/image.png" alt="Librería Pan y Café">
+        </div>
+        <nav class="nav-links">
+            <ul>
+                <li><a href="#">Novedades</a></li>
+                <li><a href="#">Libros</a></li>
+                <li><a href="#">Promociones</a></li>
+                <li><a href="#">Eventos</a></li>
+                <li><a href="#">Ayuda</a></li>
+            </ul>
+        </nav>
+        <div class="nav-icons">
+            <input type="text" placeholder="Buscar">
+            <a href="#"><img class="icon-nav-bar" src="assets/img/favorito.png" alt="Favoritos"></a>
+            <a href="#"><img class="icon-nav-bar" src="assets/img/carrito-de-compras.png" alt="Carrito"></a>
+        </div>
+    </header>
+
+    <!-- Banner Principal -->
+    <section class="banner">
+        <div class="banner-text">
+            <h1>Libros de A a Z</h1>
+            <p>Encuentra tu próximo libro favorito con nosotros.</p>
+            <a href="#" class="btn">Ver catálogo</a>
+        </div>
+    </section>
+
+    <!-- Sección de Libros Destacados -->
+    <section class="books">
+        <h2>Últimos Ingresos</h2>
+        <div class="book-list">
+            <div class="book-card">
+                <img src="book1.jpg" alt="Libro 1">
+                <p class="price">300 грн</p>
+                <p>Libro Ejemplo 1</p>
+                <button>Agregar al carrito</button>
+            </div>
+            <div class="book-card">
+                <img src="book2.jpg" alt="Libro 2">
+                <p class="price">225 грн</p>
+                <p>Libro Ejemplo 2</p>
+                <button>Agregar al carrito</button>
+            </div>
+            <!-- Agregar más libros según sea necesario -->
+        </div>
+    </section>
+
+    <!-- Categorías -->
+    <section class="categories">
+        <h2>Categorías</h2>
+        <div class="category-list">
+            <button>Libros</button>
+            <button>Juegos de mesa</button>
+            <button>Accesorios</button>
+            <button>Regalos</button>
+        </div>
+    </section>
+
+    <!-- Sección Sobre la Tienda -->
+    <section class="about">
+        <h2>Sobre Nosotros</h2>
+        <p>Contamos con 35 tiendas en el país y más de 8,000 productos en catálogo.</p>
+    </section>
+
+    <!-- Redes Sociales -->
+    <section class="social">
+        <h2>Síguenos en Redes</h2>
+        <div class="social-icons">
+            <a href="#"><img src="facebook.png" alt="Facebook"></a>
+            <a href="#"><img src="instagram.png" alt="Instagram"></a>
+            <a href="#"><img src="twitter.png" alt="Twitter"></a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <p>&copy; 2025 Librería Pan y Café. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
 </body>
 </html>
