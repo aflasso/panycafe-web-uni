@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,6 +8,7 @@
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap" rel="stylesheet">
 </head>
+
 <body>
 
     <!-- Barra de Navegación -->
@@ -34,40 +36,65 @@
     <section class="banner">
         <div class="banner-text">
             <h1>Libros de la A a Z</h1>
-            <p>En nuestra tienda podrás encontrar un libro para todos los gustos. Gran surtido. Buenos precios. Historias interesantes.</p>
+            <p>En nuestra tienda podrás encontrar un libro para todos los gustos. Gran surtido. Buenos precios.
+                Historias interesantes.</p>
             <a href="#" class="btn">Ver catálogo</a>
         </div>
         <div class="banner-books">
             <div class="carousel">
                 <button class="prev" onclick="moverCarrusel(-1)">❮</button>
                 <div class="carousel-container">
-                  <img src="assets/img/imagen1.jpg" class="slide active" alt="Imagen 1">
-                  <img src="assets/img/imagen2.jpg" class="slide" alt="Imagen 2">
-                  <img src="assets/img/imagen3.jpg" class="slide" alt="Imagen 3">
-                  <img src="assets/img/imagen4.jpg" class="slide" alt="Imagen 4">
+                    <img src="assets/img/imagen1.jpg" class="slide active" alt="Imagen 1">
+                    <img src="assets/img/imagen2.jpg" class="slide" alt="Imagen 2">
+                    <img src="assets/img/imagen3.jpg" class="slide" alt="Imagen 3">
+                    <img src="assets/img/imagen4.jpg" class="slide" alt="Imagen 4">
                 </div>
                 <button class="next" onclick="moverCarrusel(1)">❯</button>
-              </div>
+            </div>
         </div>
     </section>
 
     <!-- Sección de Libros Destacados -->
     <section class="books">
-        <h2>Últimos Ingresos</h2>
+        <h2>Lo más nuevo</h2>
         <div class="book-list">
-            <div class="book-card">
-                <img src="book1.jpg" alt="Libro 1">
-                <p class="price">300 грн</p>
-                <p>Libro Ejemplo 1</p>
-                <button>Agregar al carrito</button>
+            <div class="book-group">
+                <div class="book-card">
+                    <img src="book1.jpg" alt="Libro 1">
+                    <p class="price">300 грн</p>
+                    <p>Libro Ejemplo 1</p>
+                    <button>Comprar</button>
+                    <button>Favorito</button>
+                </div>
+                <div class="book-card">
+                    <img src="book1.jpg" alt="Libro 1">
+                    <p class="price">300 грн</p>
+                    <p>Libro Ejemplo 1</p>
+                    <button>Comprar</button>
+                    <button>Favorito</button>
+                </div>
+                <div class="book-card">
+                    <img src="book1.jpg" alt="Libro 1">
+                    <p class="price">300 грн</p>
+                    <p>Libro Ejemplo 1</p>
+                    <button>Comprar</button>
+                    <button>Favorito</button>
+                </div>
+                <div class="book-card">
+                    <img src="book1.jpg" alt="Libro 1">
+                    <p class="price">300 грн</p>
+                    <p>Libro Ejemplo 1</p>
+                    <button>Comprar</button>
+                    <button>Favorito</button>
+                </div>
+                <div class="book-card">
+                    <img src="book1.jpg" alt="Libro 1">
+                    <p class="price">300 грн</p>
+                    <p>Libro Ejemplo 1</p>
+                    <button>Comprar</button>
+                    <button>Favorito</button>
+                </div>
             </div>
-            <div class="book-card">
-                <img src="book2.jpg" alt="Libro 2">
-                <p class="price">225 грн</p>
-                <p>Libro Ejemplo 2</p>
-                <button>Agregar al carrito</button>
-            </div>
-            <!-- Agregar más libros según sea necesario -->
         </div>
     </section>
 
@@ -104,6 +131,7 @@
             <p>&copy; 2025 Librería Pan y Café. Todos los derechos reservados.</p>
         </div>
     </footer>
-    <script src="script.js"></script>
+    <script src="assets/js/script.js"></script>
 </body>
+
 </html>
