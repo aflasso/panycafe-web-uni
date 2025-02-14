@@ -1,0 +1,123 @@
+/* Estilos Generales */
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #fff6f0;
+    color: #5a3d2b;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #fff;
+    padding: 20px 40px;
+    border-bottom: 2px solid #8b5e3b;
+}
+
+.nav-links ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #5a3d2b;
+    font-weight: lighter;
+}
+
+.nav-icons {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.icon-nav-bar {
+    width: 32px;  /* Aumenta el ancho */
+    height: 32px; /* Aumenta la altura */
+}
+
+/* Banner Principal */
+.banner {
+    background: url('banner.jpg') no-repeat center;
+    background-size: cover;
+    text-align: center;
+    padding: 100px 20px;
+}
+
+.banner-text h1 {
+    font-size: 40px;
+}
+
+.banner .btn {
+    display: inline-block;
+    background: #d2691e;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+/* Libros Destacados */
+.books {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.book-list {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.book-card {
+    background: white;
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Categorías */
+.categories {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.category-list button {
+    background: #8b5e3b;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 10px;
+}
+
+/* Sobre la tienda */
+.about {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+/* Redes Sociales */
+.social {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.social-icons img {
+    width: 40px;
+    margin: 10px;
+}
+
+/* Footer */
+.footer {
+    background: #5a3d2b;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
