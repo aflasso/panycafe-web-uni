@@ -33,9 +33,21 @@
     <!-- Banner Principal -->
     <section class="banner">
         <div class="banner-text">
-            <h1>Libros de A a Z</h1>
-            <p>Encuentra tu próximo libro favorito con nosotros.</p>
+            <h1>Libros de la A a Z</h1>
+            <p>En nuestra tienda podrás encontrar un libro para todos los gustos. Gran surtido. Buenos precios. Historias interesantes.</p>
             <a href="#" class="btn">Ver catálogo</a>
+        </div>
+        <div class="banner-books">
+            <div class="carousel">
+                <button class="prev" onclick="moverCarrusel(-1)">❮</button>
+                <div class="carousel-container">
+                  <img src="assets/img/imagen1.jpg" class="slide active" alt="Imagen 1">
+                  <img src="assets/img/imagen2.jpg" class="slide" alt="Imagen 2">
+                  <img src="assets/img/imagen3.jpg" class="slide" alt="Imagen 3">
+                  <img src="assets/img/imagen4.jpg" class="slide" alt="Imagen 4">
+                </div>
+                <button class="next" onclick="moverCarrusel(1)">❯</button>
+              </div>
         </div>
     </section>
 
@@ -92,6 +104,6 @@
             <p>&copy; 2025 Librería Pan y Café. Todos los derechos reservados.</p>
         </div>
     </footer>
-
+    <script src="script.js"></script>
 </body>
 </html>
