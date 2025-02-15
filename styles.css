@@ -3,8 +3,9 @@
     --secundary-color: #E16A00;
     --third-color: #391F00;
     --primary-font-color: #241400;
-    --font-size-base: 16px;
-    --title-font-size: 32px;
+    --font-size-text: 16px;
+    --font-size-subtittle: 25px;
+    --font-size-tittle: 36px;
 }
 
 * {
