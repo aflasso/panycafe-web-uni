@@ -96,7 +96,7 @@ body {
 
 .carousel {
     position: relative;
-    width: 90%;  /* Ajusta el tamaño */
+    width: 90%;  
     height: 90%;
     object-fit: contain;
     overflow: hidden;
@@ -117,7 +117,7 @@ body {
 
 .slide {
     position: absolute;
-    width: 300px;  /* Ajusta el tamaño */
+    width: 300px; 
     height: 100%;
     object-fit: contain;
     opacity: 0;
@@ -158,8 +158,36 @@ button:hover {
 }
 
 /* Libros Destacados */
+.nav-lo-mas-nuevo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 40px;
+}
+
+.nav-lo-mas-nuevo h2 {
+    margin: 0;
+    text-align: left;
+    flex: 1;
+}
+
+.nav-lo-mas-nuevo ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    margin: 0;
+    padding: 0;
+    flex: 1;
+    justify-content: flex-end;
+}
+
+.nav-lo-mas-nuevo a {
+    text-decoration: none;
+    color: #5a3d2b;
+    font-weight: lighter;
+}
 .books {
-    background-color: #8b5e3b;
+  
     text-align: center;
     padding: 50px 20px;
 }
