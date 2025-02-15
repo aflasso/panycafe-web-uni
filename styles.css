@@ -1,7 +1,8 @@
 :root {
     --primary-color: #fffaf5;
-    --secundary--clor: #D6640038;
+    --secundary-color: #E16A00;
     --third-color: #391F00;
+    --primary-font-color: #241400;
     --font-size-base: 16px;
     --title-font-size: 32px;
 }
