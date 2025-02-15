@@ -162,7 +162,7 @@ button:hover {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 40px;
+    padding: 1% 15%;
 }
 
 .nav-lo-mas-nuevo h2 {
@@ -192,19 +192,139 @@ button:hover {
     padding: 50px 20px;
 }
 
+
+/* Estilos generales Lo Mas Nuevo */
+
+/* Flechas de navegación */
+.arrow {
+    background: none;
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 40px;
+    height: 40px;
+}
+
+.left-arrow {
+    left: 0;
+}
+
+.right-arrow {
+    right: 0;
+}
+
+.arrow img {
+    width: 100%;
+    height: auto;
+}
+/* Contenedor principal */
 .book-list {
     display: flex;
     justify-content: center;
-    gap: 20px;
+    padding: 20px;
+}
+
+.book-group {
+    display: flex;
+    gap: 30px; /* Aumenta el espacio entre tarjetas */
+  
+    flex-wrap: wrap; 
+    justify-content: center; 
+    padding: 10px; 
 }
 
 .book-card {
     background: white;
-    padding: 20px;
-    border-radius: 5px;
-    text-align: center;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    text-align: left;
+    width: 220px; 
+    min-width: 220px; 
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    height: 100%;
+    margin-bottom: 20px; 
+    position: relative;
 }
+
+
+/* Imagen del libro */
+.book-card img {
+    width: 200px;
+    height: 280px;
+    object-fit: cover; 
+    border-radius: 5px;
+}
+
+/* Precio, título y autor */
+.book-title {
+    font-size: 16px;
+    font-weight: bold; 
+    text-align: left; 
+    margin-top: 10px;
+}
+
+.price {
+    font-weight: bold;
+    color: #5A3E2B;
+    text-align: left;
+    margin: 5px 0;
+}
+
+.book-author {
+    font-size: 12px;
+    color: gray;
+    text-align: left;
+    margin-bottom: 15px; 
+}
+
+/* Contenedor de los botones */
+.book-buttons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-top: auto; 
+}
+
+/* Botón de comprar */
+.buy-btn {
+    background: var(--secundary--clor);
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    flex-grow: 1;
+    text-align: center;
+    font-size: 12px;
+}
+
+
+.fav-btn {
+    background: white;
+    border: none;
+    cursor: pointer;
+    padding: 5px;
+    position: absolute;
+    bottom: 1px; 
+    right: 10px;
+}
+
+.fav-btn img {
+    width: 25px;
+    height: 25px;
+}
+
+
+
+
+
 
 /* Categorías */
 .categories {
