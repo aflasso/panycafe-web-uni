@@ -294,7 +294,7 @@ button:hover {
 
 /* Botón de comprar */
 .buy-btn {
-    background: var(--secundary--clor);
+    background: var(--secundary-color);
     color: white;
     border: none;
     padding: 8px 12px;
