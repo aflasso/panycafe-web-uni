@@ -379,7 +379,27 @@ body {
 .fav-btn:hover {
     background-color: white;
 }
-
+.title-section-desc {
+    font-size: 25px;
+    margin-bottom: 2%;
+    font-weight: bold;
+}
+.discount {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background-color: red;
+    color: white;
+    font-weight: bold;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 14px;
+}
+.price s {
+    color: gray;
+    font-size: 14px;
+    margin-right: 5px;
+}
 /* Categorías */
 .categories {
     text-align: center;
