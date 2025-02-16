@@ -188,27 +188,12 @@ body {
     opacity: 1;
 }
 
-button {
-    position: absolute;
-    background-color: rgba(0, 0, 0, 0.5);
-    color: white;
-    border: none;
-    padding: 10px;
-    font-size: 20px;
-    cursor: pointer;
-    z-index: 10;
-}
-
 .prev {
     left: 10px;
 }
 
 .next {
     right: 10px;
-}
-
-button:hover {
-    background-color: rgba(0, 0, 0, 0.8);
 }
 
 
@@ -242,7 +227,7 @@ button:hover {
 
 .nav-lo-mas-nuevo a {
     text-decoration: none;
-    color: #5a3d2b;
+    color: var(--primary-font-color);
     font-weight: lighter;
     font-size: 15px;
 }
@@ -253,10 +238,6 @@ button:hover {
     padding: 50px 20px;
 }
 
-
-/* Estilos generales Lo Mas Nuevo */
-
-/* Flechas de navegación */
 .arrow {
     background: none;
     border: none;
@@ -344,14 +325,14 @@ button:hover {
 .price {
     font-weight: bold;
     font-size: 20px;
-    color: #5A3E2B;
+    color: var(--primary-font-color);
     text-align: left;
     margin: 5px 0;
 }
 
 .book-author {
     font-size: 12px;
-    color: gray;
+    color: var(--primary-font-color);
     text-align: left;
     margin-bottom: 15px;
 }
@@ -368,7 +349,7 @@ button:hover {
 
 /* Botón de comprar */
 .buy-btn {
-    background: #d2691e;
+    background: var(--secundary-color);
     color: white;
     border: none;
     padding: 8px 12px;
@@ -377,17 +358,9 @@ button:hover {
     flex-grow: 1;
     text-align: center;
     font-size: 12px;
+    position: absolute;
+    z-index: 10;
 }
-
-.buy-btn:hover{
-    background-color:#d2691e ;
-}
-
-button:hover, a:hover{
-    
-    transform: scale(1.05);
-}
-
 
 .fav-btn {
     background: white;
@@ -410,27 +383,22 @@ button:hover, a:hover{
 /* Categorías */
 .categories {
     text-align: center;
-    padding: 50px auto;
 }
 
 .category-list {
     display: grid;
-    font-size: 15px;
-    grid-template-columns: repeat(3, minmax(150px, 1fr));
+    font-size: 1.6rem;
+    grid-template-columns: repeat(3, minmax(200px, 350px));
     gap: 40px 170px;
-    margin: 50px auto ;
-    max-width: 700px;
+    margin: 50px auto;
     justify-content: center;
-    position: relative;
-    transform: translateX(-60px);
 }
 
 .categories-card {
     background: white;
     padding: 30px;
-    width: 220px;
     border-radius: 10px;
-    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.1);
     font-weight: bold;
     text-align: center;
     transition: transform 0.2s;
@@ -443,13 +411,17 @@ button:hover, a:hover{
 
 /* Sobre la tienda */
 .about {
+    max-width: 1600px;
+    margin: 0 auto;
     text-align: center;
     padding: 50px 20px;
-    font-size: 12px;
+    font-size: 1.6rem;
+    line-height: 30px;
 }
 
-.about p{
-    margin-top: 10px;
+.about p {
+    margin-top: 20px;
+
 }
 
 /* Redes Sociales */
@@ -471,8 +443,8 @@ button:hover, a:hover{
 }
 
 .footer {
-    background-color: #4a280e;
-    color: white;
+    background-color: var(--third-color);
+    color: var(--primary-color);
     padding: 50px;
     text-align: center;
 }
@@ -495,6 +467,7 @@ button:hover, a:hover{
 }
 
 .columna-footer ul {
+    text-align: left;
     list-style: none;
     padding: 0;
 }
@@ -518,15 +491,15 @@ button:hover, a:hover{
 .btn-contacto {
     display: inline-block;
     padding: 8px 16px;
-    border: 1px solid orange;
+    border: 1px solid var(--secundary-color);
     border-radius: 10px;
-    color: orange;
+    color: var(--secundary-color);
     text-decoration: none;
     margin-top: 8px;
 }
 
 .btn-contacto:hover{
-    background-color: orange;
+    background-color: var(--secundary-color);
     color: white;
     transform: scale(1.05);
 }
