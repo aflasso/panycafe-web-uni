@@ -43,11 +43,17 @@ body {
     padding: 20px 40px;
 }
 
+.left-nav {
+    display: flex;
+    align-items: center;
+} 
+
+
 .nav-links ul {
     font-size: 1.6rem;
     list-style: none;
     display: flex;
-    gap: 20px;
+    gap: 50px;
 }
 
 .search-container {
@@ -100,7 +106,7 @@ body {
 }
 
 .banner {
-    width: 100vw;
+    width: 100%;
     display: flex;
     padding: 1% 10%;
     justify-content: space-between;
@@ -114,14 +120,27 @@ body {
 
 .banner-text h1 {
     font-size: 3.6rem;
-    font-weight: bolder;
-    padding: 2%;
+    font-weight: 900;
 }
 
 .banner-text p {
     line-height: 25.5px;
     font-size: 1.6rem;
-    padding: 2%;
+    margin: 12px 0;
+}
+
+.banner .btn {
+    display: inline-block;
+    font-size: 1.6rem;
+    font-weight: 900;
+    width: 212px;
+    height: 50px;
+    align-content: center;
+    background: var(--secundary-color);
+    color: var(--primary-color);
+    padding: 15px 25px;
+    text-decoration: none;
+
 }
 
 .banner-books {
@@ -192,15 +211,6 @@ button:hover {
     background-color: rgba(0, 0, 0, 0.8);
 }
 
-
-.banner .btn {
-    display: inline-block;
-    background: #d2691e;
-    color: white;
-    padding: 10px 20px;
-    text-decoration: none;
-    border-radius: 5px;
-}
 
 /* Libros Destacados */
 .nav-lo-mas-nuevo {
