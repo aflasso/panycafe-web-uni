@@ -37,6 +37,7 @@ body {
 
 /* Navbar */
 .navbar {
+    width: 100%;;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -48,12 +49,21 @@ body {
     align-items: center;
 } 
 
+.logo {
+    min-width: 200px;
+    max-width: 350px;
+}
+
 
 .nav-links ul {
     font-size: 1.6rem;
     list-style: none;
     display: flex;
     gap: 50px;
+}
+
+.menu-trigger{
+    display: none;
 }
 
 .search-container {
@@ -507,4 +517,33 @@ body {
 .footer-text {
     margin-top: 40px;
     font-size: 12px;
+}
+
+@media (max-width: 480px) {
+    
+    html {
+        font-size: 40%
+    }
+}
+
+@media (max-width: 1024px) {
+
+    html {
+        font-size: 56%;
+    }
+
+    .nav-links {
+        display: none;
+    }
+
+    .nav-icons {
+        display: none;
+    }
+
+    .menu-trigger {
+        display: block;
+    }
+
+
+
 }
