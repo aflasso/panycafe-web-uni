@@ -3,15 +3,13 @@
     --secundary-color: #E16A00;
     --third-color: #391F00;
     --primary-font-color: #241400;
-    --font-size-base: 16px;
-    --title-font-size: 32px;
 }
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-  }
+}
 
 a {
     text-decoration: none;
@@ -23,13 +21,18 @@ img {
     height: auto;
     display: block;
 }
-  
+
+html {
+    font-size: 62.5%;
+    height: 100%;
+}
+
 /* Estilos Generales */
 body {
+    height: 100%;
     font-family: 'Montserrat', sans-serif;
-    font-size: 16px;
-    background: #ffffff;
-    color: #5a3d2b;
+    background: var(--primary-color);
+    color: var(--primary-font-colors);
 }
 
 /* Navbar */
@@ -37,21 +40,57 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background: #fff;
     padding: 20px 40px;
-    border-bottom: 2px solid #8b5e3b;
 }
 
 .nav-links ul {
+    font-size: 1.6rem;
     list-style: none;
     display: flex;
     gap: 20px;
 }
 
-.nav-links a {
-    text-decoration: none;
-    color: #5a3d2b;
-    font-weight: lighter;
+.search-container {
+    display: flex;
+    align-items: center;
+    background-color: white;
+    border-radius: 25px;
+    padding: 5px 10px;
+    border: 2px solid #8B4513;
+    width: 300px;
+    transition: 0.3s;
+}
+
+.search-bar {
+    flex: 1;
+    border: none;
+    outline: none;
+    padding: 8px;
+    font-size: 16px;
+    border-radius: 25px;
+}
+
+.search-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    padding: 5px;
+    color: #8B4513;
+    transition: 0.3s;
+}
+
+.search-container:hover {
+    border-color: #D2691E;
+    box-shadow: 0px 0px 8px rgba(210, 105, 30, 0.5);
+}
+
+.search-button:hover {
+    color: #D2691E;
+}
+
+.nav-links ul :hover{
+    transform: scale(1.05);
 }
 
 .nav-icons {
@@ -60,33 +99,33 @@ body {
     gap: 25px;
 }
 
-.icon-nav-bar {
-    width: 32px;  /* Aumenta el ancho */
-    height: 32px; /* Aumenta la altura */
-}
-
-/* Banner Principal */
 .banner {
-    background: url('banner.jpg') no-repeat center;
-    background-size: cover;
+    width: 100vw;
     display: flex;
-    padding: 50px 100px;
-    gap: 300px;
+    padding: 1% 10%;
+    justify-content: space-between;
     height: 50vh;
 }
 
 .banner-text {
-    width: 30%;
-    padding: 50px;
+    width: 40%;
+    align-self: center;
 }
 
 .banner-text h1 {
-    font-size: 40px;
+    font-size: 3.6rem;
     font-weight: bolder;
+    padding: 2%;
+}
+
+.banner-text p {
+    line-height: 25.5px;
+    font-size: 1.6rem;
+    padding: 2%;
 }
 
 .banner-books {
-    width: calc(50% - 10px);
+    width: 40%;
     background-color: #5a3d2b;
     border-radius: 5%;
     display: flex;
@@ -97,7 +136,7 @@ body {
 
 .carousel {
     position: relative;
-    width: 90%;  
+    width: 90%;
     height: 90%;
     object-fit: contain;
     overflow: hidden;
@@ -118,12 +157,13 @@ body {
 
 .slide {
     position: absolute;
-    width: 300px; 
+    width: 300px;
     height: 100%;
     object-fit: contain;
     opacity: 0;
     transition: opacity 0.5s ease-in-out;
 }
+
 
 .slide.active {
     opacity: 1;
@@ -140,8 +180,13 @@ button {
     z-index: 10;
 }
 
-.prev { left: 10px; }
-.next { right: 10px; }
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
 
 button:hover {
     background-color: rgba(0, 0, 0, 0.8);
@@ -162,10 +207,10 @@ button:hover {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1% 15%;
+    padding: 1% 10%;
 }
 
-.nav-lo-mas-nuevo h2 {
+.nav-lo-mas-nuevo p {
     margin: 0;
     text-align: left;
     flex: 1;
@@ -174,20 +219,26 @@ button:hover {
 .nav-lo-mas-nuevo ul {
     list-style: none;
     display: flex;
-    gap: 20px;
+    gap: 40px;
     margin: 0;
     padding: 0;
     flex: 1;
     justify-content: flex-end;
 }
 
+.nav-lo-mas-nuevo ul :hover{
+    transform: scale(1.05);
+}
+
 .nav-lo-mas-nuevo a {
     text-decoration: none;
     color: #5a3d2b;
     font-weight: lighter;
+    font-size: 15px;
 }
+
 .books {
-  
+
     text-align: center;
     padding: 50px 20px;
 }
@@ -219,6 +270,7 @@ button:hover {
     width: 100%;
     height: auto;
 }
+
 /* Contenedor principal */
 .book-list {
     display: flex;
@@ -228,11 +280,12 @@ button:hover {
 
 .book-group {
     display: flex;
-    gap: 30px; /* Aumenta el espacio entre tarjetas */
-  
-    flex-wrap: wrap; 
-    justify-content: center; 
-    padding: 10px; 
+    gap: 30px;
+    /* Aumenta el espacio entre tarjetas */
+
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 10px;
 }
 
 .book-card {
@@ -241,36 +294,46 @@ button:hover {
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
     padding: 15px;
     text-align: left;
-    width: 220px; 
-    min-width: 220px; 
+    width: 220px;
+    min-width: 220px;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     justify-content: space-between;
     height: 100%;
-    margin-bottom: 20px; 
+    margin-bottom: 20px;
     position: relative;
 }
 
+.title-section {
+    font-size: 25px;
+    font-weight: bold;
+}
 
 /* Imagen del libro */
 .book-card img {
     width: 200px;
     height: 280px;
-    object-fit: cover; 
+    object-fit: cover;
     border-radius: 5px;
+}
+
+.book-card:hover{
+    
+    transform: scale(1.05);
 }
 
 /* Precio, título y autor */
 .book-title {
     font-size: 16px;
-    font-weight: bold; 
-    text-align: left; 
+    font-weight: bold;
+    text-align: left;
     margin-top: 10px;
 }
 
 .price {
     font-weight: bold;
+    font-size: 20px;
     color: #5A3E2B;
     text-align: left;
     margin: 5px 0;
@@ -280,7 +343,7 @@ button:hover {
     font-size: 12px;
     color: gray;
     text-align: left;
-    margin-bottom: 15px; 
+    margin-bottom: 15px;
 }
 
 /* Contenedor de los botones */
@@ -289,12 +352,13 @@ button:hover {
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    margin-top: auto; 
+    margin-top: auto;
+    margin-bottom: 15px;
 }
 
 /* Botón de comprar */
 .buy-btn {
-    background: var(--secundary-color);
+    background: #d2691e;
     color: white;
     border: none;
     padding: 8px 12px;
@@ -305,6 +369,15 @@ button:hover {
     font-size: 12px;
 }
 
+.buy-btn:hover{
+    background-color:#d2691e ;
+}
+
+button:hover, a:hover{
+    
+    transform: scale(1.05);
+}
+
 
 .fav-btn {
     background: white;
@@ -312,33 +385,30 @@ button:hover {
     cursor: pointer;
     padding: 5px;
     position: absolute;
-    bottom: 1px; 
     right: 10px;
 }
 
 .fav-btn img {
-    width: 25px;
-    height: 25px;
+    width: 35px;
+    height: 35px;
 }
 
-
-
-
-
+.fav-btn:hover {
+    background-color: white;
+}
 
 /* Categorías */
 .categories {
     text-align: center;
-    margin-top: 120px;
-    margin-left: -20px;
-    padding: 0 20px;
+    padding: 50px auto;
 }
 
 .category-list {
     display: grid;
+    font-size: 15px;
     grid-template-columns: repeat(3, minmax(150px, 1fr));
     gap: 40px 170px;
-    margin: 100px auto 0;
+    margin: 50px auto ;
     max-width: 700px;
     justify-content: center;
     position: relative;
@@ -365,6 +435,11 @@ button:hover {
 .about {
     text-align: center;
     padding: 50px 20px;
+    font-size: 12px;
+}
+
+.about p{
+    margin-top: 10px;
 }
 
 /* Redes Sociales */
@@ -373,16 +448,80 @@ button:hover {
     padding: 50px 20px;
 }
 
+.social-icons {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    padding: 10px;
+}
+
 .social-icons img {
-    width: 40px;
+    width: 50px;
     margin: 10px;
 }
 
-/* Footer */
 .footer {
-    height: 276px;
-    background: #5a3d2b;
+    background-color: #4a280e;
     color: white;
+    padding: 50px;
     text-align: center;
-    padding: 20px;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.logo-footer {
+    margin-top: 70px;
+    text-align: left;
+    max-width: 400px;
+}
+
+.logo-footer img{
+    width: 400px;
+}
+
+.columna-footer ul {
+    list-style: none;
+    padding: 0;
+}
+
+.columna-footer ul li {
+    margin-bottom: 15px;
+}
+
+.columna-footer ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 15px;
+}
+
+.contacto-footer {
+    font-size: 15px;
+    margin-top: 70px;
+    text-align: right;
+}
+
+.btn-contacto {
+    display: inline-block;
+    padding: 8px 16px;
+    border: 1px solid orange;
+    border-radius: 10px;
+    color: orange;
+    text-decoration: none;
+    margin-top: 8px;
+}
+
+.btn-contacto:hover{
+    background-color: orange;
+    color: white;
+    transform: scale(1.05);
+}
+
+.footer-text {
+    margin-top: 40px;
+    font-size: 12px;
 }

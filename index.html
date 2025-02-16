@@ -26,7 +26,10 @@
             </ul>
         </nav>
         <div class="nav-icons">
-            <input type="text" placeholder="Buscar">
+            <div class="search-container">
+                <input type="text" class="search-bar" placeholder="Buscar...">
+            </div>
+            
             <a href="#"><img class="icon-nav-bar" src="assets/icons/favorito.png" alt="Favoritos"></a>
             <a href="#"><img class="icon-nav-bar" src="assets/icons/shopping_cart.png" alt="Carrito"></a>
         </div>
@@ -42,14 +45,9 @@
         </div>
         <div class="banner-books">
             <div class="carousel">
-                <button class="prev"></button>
                 <div class="carousel-container">
                     <img src="assets/img/libro1.jpg" class="slide active" alt="Imagen 1">
-                    <img src="assets/img/libro2.jpg" class="slide" alt="Imagen 2">
-                    <img src="assets/img/libro3.jpg" class="slide" alt="Imagen 3">
-                    <img src="assets/img/libro4.jpg" class="slide" alt="Imagen 4">
                 </div>
-                <button class="next"></button>
             </div>
         </div>
     </section>
@@ -57,7 +55,7 @@
     <!-- Sección de Libros Destacados -->
     <section class="books">
         <nav class="nav-lo-mas-nuevo">
-            <h2>Lo más nuevo</h2>
+            <p class="title-section">Lo más nuevo</p>
             <ul>
                 <li><a href="#">Fantasia</a></li>
                 <li><a href="#">Autodesarrollo</a></li>
@@ -67,18 +65,15 @@
                 <li><a href="#">Otro</a></li>
             </ul>
         </nav>
-    
+
         <!-- Contenedor general de los libros con flechas -->
         <div class="book-container">
-            <button class="arrow left-arrow">
-                <img src="assets/img/arrowL.png" alt="Anterior">
-            </button>
-    
+
             <div class="book-list">
                 <div class="book-group">
                     <div class="book-card">
                         <img src="assets/img/libro1.jpg" alt="Libro 1">
-                        <p class="price">$100,000</p>
+                        <p class="price">$100.000</p>
                         <p class="book-title">Mi portada de Libro</p>
                         <p class="book-author">Jesus Gelves</p>
                         <div class="book-buttons">
@@ -88,10 +83,10 @@
                             </button>
                         </div>
                     </div>
-    
+
                     <div class="book-card">
                         <img src="assets/img/libro2.jpg" alt="Libro 2">
-                        <p class="price">$240,000</p>
+                        <p class="price">$240.000</p>
                         <p class="book-title">Clean Code</p>
                         <p class="book-author">Robert C. Martin</p>
                         <div class="book-buttons">
@@ -101,10 +96,10 @@
                             </button>
                         </div>
                     </div>
-    
+
                     <div class="book-card">
                         <img src="assets/img/libro3.jpg" alt="Libro 3">
-                        <p class="price">$50,000</p>
+                        <p class="price">$50.000</p>
                         <p class="book-title">Atlantis</p>
                         <p class="book-author">David Gibbins</p>
                         <div class="book-buttons">
@@ -114,10 +109,10 @@
                             </button>
                         </div>
                     </div>
-    
+
                     <div class="book-card">
                         <img src="assets/img/libro4.jpg" alt="Libro 4">
-                        <p class="price">$120,000</p>
+                        <p class="price">$120.000</p>
                         <p class="book-title">Mamá Nos Dijo Adiós</p>
                         <p class="book-author">Andrés Lasso</p>
                         <div class="book-buttons">
@@ -127,10 +122,10 @@
                             </button>
                         </div>
                     </div>
-    
+
                     <div class="book-card">
                         <img src="assets/img/libro5.jpg" alt="Libro 5">
-                        <p class="price">$111,111,111</p>
+                        <p class="price">$111.000</p>
                         <p class="book-title">El Zorro en el Bosque</p>
                         <p class="book-author">Mar Yepez</p>
                         <div class="book-buttons">
@@ -142,17 +137,13 @@
                     </div>
                 </div>
             </div>
-    
-            <button class="arrow right-arrow">
-                <img src="assets/img/arrowR.png" alt="Siguiente">
-            </button>
         </div>
     </section>
-    
+
 
     <!-- Categorías -->
     <section class="categories">
-        <h2>Catalogo</h2>
+        <p class="title-section">Catálogo</p>
         <div class="category-list">
             <div class="categories-card">Libros</div>
             <div class="categories-card">Libros digitales</div>
@@ -163,32 +154,79 @@
             <div class="categories-card">Juegos de mesa</div>
             <div class="categories-card">Hoy día</div>
             <div class="categories-card">Últimas unidades</div>
-            </div>
+        </div>
         </div>
     </section>
 
     <!-- Sección Sobre la Tienda -->
     <section class="about">
-        <h2>Sobre Nosotros</h2>
-        <p>Contamos con 35 tiendas en el país y más de 8,000 productos en catálogo.</p>
+        <p class="title-section">Sobre Nosotros</p>
+        <p>Bienvenidos a Pan y Café, una librería donde cada página es una puerta a nuevas historias, conocimientos y emociones. Nuestro nombre evoca la calidez de un buen libro acompañado de momentos tranquilos, pero aquí no vendemos café ni pan, solo literatura en todas sus formas.
+            Nos apasiona acercar a las personas al mundo de los libros, ofreciendo una selección diversa que va desde clásicos inmortales hasta las últimas novedades. Creemos que la lectura es un viaje personal y único, por eso nos esforzamos en recomendar títulos que realmente conecten con cada lector.
+            Más que una librería, queremos ser un punto de encuentro para quienes aman las historias, la imaginación y el aprendizaje. Gracias por visitarnos y ser parte de esta comunidad de lectores. ¡Esperamos que encuentres tu próxima gran lectura aquí!</p>
     </section>
 
     <!-- Redes Sociales -->
     <section class="social">
-        <h2>Síguenos en Redes</h2>
+        <p class="title-section">Síguenos en Redes</p>
         <div class="social-icons">
-            <a href="#"><img src="facebook.png" alt="Facebook"></a>
-            <a href="#"><img src="instagram.png" alt="Instagram"></a>
-            <a href="#"><img src="twitter.png" alt="Twitter"></a>
+            <a href="#"><img src="assets/icons/facebook.png" alt="Facebook"></a>
+            <a href="#"><img src="assets/icons/instagram.png" alt="Instagram"></a>
+            <a href="#"><img src="assets/icons/gorjeo.png" alt="Twitter"></a>
         </div>
     </section>
 
     <!-- Footer -->
     <footer class="footer">
         <div class="footer-content">
-            <p>&copy; 2025 Librería Pan y Café. Todos los derechos reservados.</p>
+            <!-- Logo y eslogan -->
+            <div class="logo-footer">
+                <a href="#"><img src="assets/img/logo_blanco.png" alt="Logo Librería Pan y Café"></a>
+            </div>
+    
+            <!-- Categorías -->
+            <div class="columna-footer">
+                <ul>
+                    <li><a href="#">Popular</a></li>
+                    <li><a href="#">Programación</a></li>
+                    <li><a href="#">Libros para niños</a></li>
+                    <li><a href="#">Psicología</a></li>
+                    <li><a href="#">Negocio</a></li>
+                </ul>
+            </div>
+    
+            <!-- Información -->
+            <div class="columna-footer">
+                <ul>
+                    <li><a href="#">Información</a></li>
+                    <li><a href="#">Entrega</a></li>
+                    <li><a href="#">Pago</a></li>
+                    <li><a href="#">Acerca de la tienda</a></li>
+                </ul>
+            </div>
+    
+            <!-- Ayuda -->
+            <div class="columna-footer">
+                <ul>
+                    <li><a href="#">Ayuda</a></li>
+                    <li><a href="#">Contactos</a></li>
+                    <li><a href="#">Devolución de mercancías</a></li>
+                    <li><a href="#">Ayuda para compradores</a></li>
+                </ul>
+            </div>
+    
+            <!-- Contacto -->
+            <div class="contacto-footer">
+                <p><strong>+38 (071) 339-16-26</strong></p>
+                <a href="#" class="btn-contacto">Contáctanos</a>
+            </div>
         </div>
+    
+        <!-- Derechos reservados -->
+        <p class="footer-text">&copy; 2025 Librería Pan y Café. Todos los derechos reservados.</p>
     </footer>
+    
 
 </body>
+
 </html>
