@@ -3,9 +3,6 @@
     --secundary-color: #E16A00;
     --third-color: #391F00;
     --primary-font-color: #241400;
-    --font-size-text: 16px;
-    --font-size-subtittle: 25px;
-    --font-size-tittle: 36px;
 }
 
 * {
@@ -24,13 +21,18 @@ img {
     height: auto;
     display: block;
 }
+
+html {
+    font-size: 62.5%;
+    height: 100%;
+}
   
 /* Estilos Generales */
 body {
+    height: 100%;
     font-family: 'Montserrat', sans-serif;
-    font-size: 16px;
-    background: #ffffff;
-    color: #5a3d2b;
+    background: var(--primary-color);
+    color: var(--primary-font-colors);
 }
 
 /* Navbar */
@@ -38,21 +40,14 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background: #fff;
     padding: 20px 40px;
-    border-bottom: 2px solid #8b5e3b;
 }
 
 .nav-links ul {
+    font-size: 1.6rem;
     list-style: none;
     display: flex;
     gap: 20px;
-}
-
-.nav-links a {
-    text-decoration: none;
-    color: #5a3d2b;
-    font-weight: lighter;
 }
 
 .nav-icons {
@@ -61,33 +56,33 @@ body {
     gap: 25px;
 }
 
-.icon-nav-bar {
-    width: 32px;  /* Aumenta el ancho */
-    height: 32px; /* Aumenta la altura */
-}
-
-/* Banner Principal */
 .banner {
-    background: url('banner.jpg') no-repeat center;
-    background-size: cover;
+    width: 100vw;
     display: flex;
-    padding: 50px 100px;
-    gap: 300px;
+    padding: 5% 10%;
+    justify-content: space-between;
     height: 50vh;
+
 }
 
 .banner-text {
-    width: 30%;
-    padding: 50px;
+    height: 30%;
+    width: 25%;
+    align-self: center;
 }
 
 .banner-text h1 {
-    font-size: 40px;
+    font-size: 3.6rem;
     font-weight: bolder;
 }
 
+.banner-text p {
+    line-height: 25.5px;
+    font-size: 1.6rem
+}
+
 .banner-books {
-    width: calc(50% - 10px);
+    width: 40%;
     background-color: #5a3d2b;
     border-radius: 5%;
     display: flex;
