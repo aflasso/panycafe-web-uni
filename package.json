@@ -1,0 +1,15 @@
+{
+  "name": "panycafe-web-uni",
+  "version": "1.0.0",
+  "description": "hola chicos",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "sass": "^1.85.0"
+  }
+}
